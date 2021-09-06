@@ -10,14 +10,16 @@ const App = () => {
       <NoteState>
         <Router>
           <Navbar />
-          <Switch>
-            <Route key="home" exact path="/">
-              <Home />
-            </Route>
-            <Route key="about" exact path="/about">
-              <About />
-            </Route>
-          </Switch>
+          <div className="container">
+            <Switch>
+              <Route key="home" exact path="/">
+                <Home />
+              </Route>
+              <Route key="about" exact path="/about">
+                <About />
+              </Route>
+            </Switch>
+          </div>
         </Router>
       </NoteState>
     </div>
